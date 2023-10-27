@@ -1,0 +1,76 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #4c4a4a;
+}
+
+.cube {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  transform: rotate(50deg);
+  /* border: 2px solid; */
+}
+.cube > p {
+  transform: rotate(-50deg);
+  position: absolute;
+  top: 41px;
+  margin-block: 0px;
+  text-align: center;
+  text-transform: uppercase;
+  color: aliceblue;
+}
+.cube > p > span {
+  color: #ff9a03;
+}
+.cube > h5 {
+  font-size: 7px;
+  transform: rotate(-50deg) translateY(24px);
+  color: aliceblue;
+  position: relative;
+  margin-block: 0px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 40px;
+}
+.cube > .top {
+  border: 5px solid #ff9a03;
+  transform: rotate(0deg);
+  position: absolute;
+  top: 0px;
+  width: 107%;
+  left: -3px;
+  background-color: #ff9a03;
+}
+.cube > .left {
+  border: 5px solid #67ff67;
+  background-color: #67ff67;
+  transform: rotate(90deg);
+  position: absolute;
+  left: -51px;
+  width: 94%;
+  bottom: 43px;
+}
+.cube > .right {
+  border: 5px solid #d5f073;
+  background-color: #d5f073;
+  transform: rotate(90deg);
+  position: absolute;
+  right: -56px;
+  width: 91%;
+  top: 45px;
+  right: -61px;
+}
+.cube > .bottom {
+  border: 5px solid #0387bd;
+  background-color: #0387bd;
+  transform: rotate(0deg);
+  position: absolute;
+  bottom: -5px;
+  width: 110%;
+  left: -4px;
+}
